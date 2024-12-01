@@ -28,4 +28,4 @@ if good_credit:
 elif bad_credit:
     print("you're down payment is " + '$' + str(price_of_house * .2))
 else:
-    print('You do not quilify')
+    print('You do not qaulify')
