@@ -8,4 +8,4 @@ while tries < 3:
         exit()
     else:
         tries = tries + 1
-print('You lose, try again!')
+print('You lose!')
