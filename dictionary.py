@@ -7,7 +7,7 @@ device_info = {
 device_info_request = ''
 while device_info_request != 'quit':
     device_info_request = input('device info: ')
-    if device_info_request == 'help':
+    if device_info_request.lower() == 'help':
         print(
 '''
 hostname
@@ -17,10 +17,10 @@ location
 quit
 '''
         )
-    elif device_info_request == 'quit':
+    elif device_info_request.lower() == 'quit':
         exit()
     else:
-        print(device_info.get(device_info_request, 'does not exist in device info, type help for options'))
+        print(device_info.get(device_info_request.lower(), 'does not exist in device info, type help for options'))
 
 
 
