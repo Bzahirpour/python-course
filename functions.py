@@ -21,3 +21,11 @@ greet_names('Mary', 'Hatton')
 
 greet_names(last_name='John', first_name='Smith')
 greet_names('Mary', 'Hatton')
+
+
+
+#
+def square(number):
+    return number * number
+
+print(square(3))
