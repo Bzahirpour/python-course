@@ -16,7 +16,7 @@ sn
 location
 quit
 ''')
-    elif device_info_request == 'quit':
+    elif device_info_request == 'quit': 
         exit()
     else:
         print(device_info.get(device_info_request, 'does not exist in device info, type help for options'))
