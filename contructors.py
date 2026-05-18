@@ -62,4 +62,3 @@ hero = Character('Arthur', 200)
 enemy = Character('Orc', 1000)
 
 hero.take_damage(10)
-enemy.take_damage(500)
