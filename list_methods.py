@@ -33,10 +33,14 @@ for current_number in list:
         list2.append(current_number)
 print(list2)
 
-#Moshs solution (I did not know you can do 'NOT in'
-list = [1,2,3,1,2,3,4,5,3,5,3,2,1,6]
+
+list = [40, 20, 30, 10, 10, 10, 5, 40]
 list2 = []
-for current_number in list:
-    if current_number not in list2:
-        list2.append(current_number)
+
+for number in list:
+    if number in list2:
+        continue
+    else:
+        list2.append(number)
+list2.sort()
 print(list2)

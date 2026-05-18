@@ -19,12 +19,26 @@ elif len(unit) == 1 and unit in 'Kk':
 else:
     print('You must enter either Ll or Kk for converting weight to the approriate unit')
 
-# Mosh solution
-weight = int(input('Weight: '))
-unit = input('(L)bs or (K)gs: ')
-if unit.upper() == "L":
-    converted = weight * 0.45
-    print(f"You are {converted} kilos")
-else:
-    converted = weight / 0.45
-    print(f"You are {converted} lbs")
+# Other solution
+while True:
+    try:
+        weight = float(input('what is your weight?: '))
+        break
+    except ValueError:
+        print('Weight must be a number')
+        continue
+
+
+while True:
+    lbs_or_kgs = input('is that in (L)bs or (K)gs?: ').lower()
+    if lbs_or_kgs == 'l':
+        final_weight = weight / 2.2
+        print(f'you are {final_weight} kgs')
+        break
+    elif lbs_or_kgs == 'k':
+        final_weight = weight * 2.2
+        print(f'you are {final_weight} lbs')
+        break
+    else:
+        print('you must enter l or k genius')
+        continue

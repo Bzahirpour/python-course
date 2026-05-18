@@ -25,8 +25,35 @@ greet_names('John', 'Mary')
 
 
 
-#
+# square function
 def square(number):
     return number * number
 
-print(square(3))
+
+print(square(4))
+
+# or
+
+def greeting():
+    name = input('what is your name? ')
+    print(f'hello {name}!')
+
+
+greeting()
+
+# or you can pass parameters to the function
+
+def greet(name):
+    print(f'hello {name}!')
+
+
+greet('ben')
+
+# or you can get an input from the user
+def greet(name):
+    print(f'hello {name}!')
+
+
+i_am = input('whats your name? ')
+greet(i_am)
+
