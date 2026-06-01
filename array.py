@@ -43,3 +43,5 @@ baseball = [[180, 78.4],
 # Create a 2D numpy array from baseball: np_baseball
 np_baseballs = np.array(baseball)
 print(np_baseballs)
+
+np.corrc
