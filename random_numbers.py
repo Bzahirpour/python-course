@@ -27,6 +27,12 @@ class Dice:
         final_result = tuple(results)
         return final_result
 
-num_of_sides = input('how many sides does your dice have: ')
-dice = Dice(int(num_of_sides))
-print(dice.roll())
+while True:
+    num_of_sides = input('how many sides does your dice have: ')
+    try:
+        dice = Dice(int(num_of_sides))
+        print(dice.roll())
+        break
+    except ValueError:
+        print('Please enter a number')
+        pass
